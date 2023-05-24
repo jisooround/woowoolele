@@ -1,11 +1,17 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import GlobalStyles from "./global/globalStyles";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./router";
+import Header from "./components/layout/Header";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <div className="App"></div>;
+  return (
+    <>
+      <GlobalStyles />
+      <Header />
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;
