@@ -1,14 +1,22 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 
 type Props = {};
 
 const Home = (props: Props) => {
+  const navigate = useNavigate();
+
+  const handleClickStartBtn = () => {
+    navigate("./write");
+  };
+
   return (
     <ContainerStyles>
       <TitleStyles>WOOWOOLELE</TitleStyles>
       <p>‘우우렐레’는 우쿨렐레 악보를 쉽게 만들어주는 앱입니다.</p>
-      <StartButtonStyles>우우렐레 시작하기!</StartButtonStyles>
+      <StartButtonStyles onClick={handleClickStartBtn}>
+        우우렐레 시작하기!
+      </StartButtonStyles>
     </ContainerStyles>
   );
 };
@@ -25,6 +33,9 @@ const ContainerStyles = styled.div`
     text-align: center;
     font-size: 1.3rem;
   }
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
 `;
 
 const TitleStyles = styled.div`
@@ -34,13 +45,13 @@ const TitleStyles = styled.div`
   align-items: center;
   overflow: hidden;
   padding: 70px 80px;
-  margin: 120px 0 50px 0;
+  margin: 150px 0 50px 0;
   box-sizing: border-box;
   background-color: var(--color-yellow);
   border: 1px solid var(--color-black);
-  font-size: 7rem;
+  font-size: 6rem;
   color: transparent;
-  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--color-black);
 `;
 
