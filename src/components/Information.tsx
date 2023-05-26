@@ -17,6 +17,7 @@ const Information = (props: Props) => {
 const ContainerStyle = styled.div``;
 
 const TitleStyle = styled.div`
+  width: 100%;
   display: flex;
   gap: 10px;
   input {
