@@ -39,6 +39,28 @@ button {
   border: none;
   font-family: GowunDodumRegular;
 }
+
+input {
+  background-color: var(--color-yellow);
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: GowunDodumRegular;
+}
+
+label {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background-color: var(--color-yellow);
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 `;
 
 export default GlobalStyles;

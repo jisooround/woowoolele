@@ -1,4 +1,3 @@
-import { useState } from "react";
 import GlobalStyles from "./global/globalStyles";
 import { RouterProvider } from "react-router-dom";
 import { router } from "./router";
