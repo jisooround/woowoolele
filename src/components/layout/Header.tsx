@@ -21,10 +21,10 @@ const ContainerStyles = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
+  padding: 30px;
   box-sizing: border-box;
   background-color: var(--color-pink);
-  box-shadow: 0 2px 30px var(--color-white);
+  /* box-shadow: 0 2px 30px var(--color-white); */
   p {
     font-family: GowunDodumRegular;
     font-size: 1.3rem;

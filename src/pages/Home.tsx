@@ -14,27 +14,26 @@ const Home = (props: Props) => {
 };
 
 const ContainerStyles = styled.div`
-  width: 100vw;
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
-  align-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   p {
     width: 100%;
-    margin: 20px;
     text-align: center;
     font-size: 1.3rem;
   }
 `;
 
 const TitleStyles = styled.div`
-  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   padding: 70px 80px;
-  margin: 120px 0 50px 0;
+  margin: 180px 0 50px 0;
   box-sizing: border-box;
   background-color: var(--color-yellow);
   border: 1px solid var(--color-black);
@@ -45,15 +44,16 @@ const TitleStyles = styled.div`
 `;
 
 const StartButtonStyles = styled.button`
-  padding: 15px 30px;
+  padding: 15px;
   margin: 100px 0;
   box-sizing: border-box;
-  border: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
   font-size: 1.5rem;
   cursor: pointer;
-  :hover {
+  &:hover {
     transition: 0.2s;
-    background-color: var(--color-yellow);
+    color: var(--color-yellow);
+    border-bottom: 1px solid var(--color-yellow);
   }
 `;
 
