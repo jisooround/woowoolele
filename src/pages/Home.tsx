@@ -1,14 +1,22 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import { useNavigate } from "react-router-dom";
+import styled from "styled-components";
 
 type Props = {};
 
 const Home = (props: Props) => {
+  const navigate = useNavigate();
   return (
     <ContainerStyles>
       <TitleStyles>WOOWOOLELE</TitleStyles>
       <p>‘우우렐레’는 우쿨렐레 악보를 쉽게 만들어주는 앱입니다.</p>
-      <StartButtonStyles>우우렐레 시작하기!</StartButtonStyles>
+      <StartButtonStyles
+        onClick={() => {
+          navigate("/sheetmusic");
+        }}
+      >
+        우우렐레 시작하기!
+      </StartButtonStyles>
     </ContainerStyles>
   );
 };
