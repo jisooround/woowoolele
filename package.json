@@ -15,7 +15,8 @@
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.10.0",
     "recoil": "^0.7.7",
-    "styled-reset": "^4.4.7"
+    "styled-reset": "^4.4.7",
+    "uuid": "^11.0.3"
   },
   "devDependencies": {
     "@types/node": "^18.16.0",
